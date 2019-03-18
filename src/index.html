@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Styleguide Travel-Checklist</title>
+    <meta name="description" content="Styleguide Travel-Checklist. Get an insight into brand guidelines, css-methodology and the UI pattern library.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="same-origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Add font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Styleguide Travel-Checklist">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Styleguide Travel-Checklist">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#2F3BA2">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Pack<span>it</span></a>
+            <div id="nav-items">
+                <a href="#Brand-Guidelines">Brand Guidelines</a>
+                <a href="#CSS-Methodology">CSS-Methodology</a>
+                <a href="#UI-Pattern-Library">UI Pattern Library</a>
+            </div>
+        </nav>
+        <div class="burgerbuttons">
+            <button class="burgerbutton" id="off"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            <button class="burgerbutton" id="on"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+        </div>
+    </header>
+    <main>
+        <section id="styleguide">
+            <h1>Styleguide<br>Pack<span>it</span></h1>
+        </section>
+        <section id="Brand-Guidelines">
+            <h2>Brand Guidelines</h2>
+            <article>
+                <h3>Introduction</h3>
+                <p>
+                    Travel Checklist is an interactive web application that helps you keep track of the three most important organizational aspects of your trip: <span class=bold>What do I have to pack? What arrangements do I have to make? What errands do I have to run?</span>
+                </p>
+                <p>
+                    The follwing style guide contains a set of standards for creating and designing documents for this web application. It establishses and enforces a style to improve the brand communication. Consistency within a document and across multiple documents is essantial.
+                </p>
+            </article>
+            <article id="colors">
+                <h3>Colors</h3>
+                <div class="color_wrapper">
+                    <div id="darkgrey" class="color"></div>
+                    <h4>Dark Grey</h4>
+                    <p>RGB: 50, 50, 50</p>
+                    <p>#323232</p>
+                </div>
+                <div class="color_wrapper">
+                    <div id="outlineblue" class="color"></div>
+                    <h4>Outline Blue</h4>
+                    <p>RGB: 80, 100, 140</p>
+                    <p>#50648C</p>
+                </div>
+                <div class="color_wrapper">
+                    <div id="logoblue" class="color"></div>
+                    <h4>Logo Blue</h4>
+                    <p>RGB: 125, 140, 170</p>
+                    <p>#7D8CAA</p>
+                </div>
+                <div class="color_wrapper">
+                    <div id="backpackblue" class="color"></div>
+                    <h4>Backpack Blue</h4>
+                    <p>RGB: 160, 175, 190</p>
+                    <p>#A0AFBE</p>
+                </div>
+                <div class="color_wrapper">
+                    <div id="lightblue" class="color"></div>
+                    <h4>Light Blue</h4>
+                    <p>RGB: 195, 205, 210</p>
+                    <p>#C3CDD2</p>
+                </div>
+                <div class="color_wrapper">
+                    <div id="lightgrey" class="color"></div>
+                    <h4>Light Grey</h4>
+                    <p>RGB: 240, 240, 240</p>
+                    <p>#F0F0F0</p>
+                </div> 
+                <div class="short_description">             
+                    <p>
+                        Only the listed colors should be used. It is important not to deviate from the given color codes.
+                    </p>
+                </div> 
+
+            </article>
+            <article id="typography">
+                <h3>Typography</h3>
+                <div id="headlines">
+                    <h4>Headlines</h4>
+                    <hr>
+                    <p class="josefin-sans">Josefin Sans</p>
+                    <p class="josefin-sans regular-400">regular 400</p>
+                    <p class="josefin-sans bold-700">bold 700</p>
+                </div>
+                <div id="continuous-text">
+                    <h4>Continuous Text</h4>
+                    <hr>
+                    <p class="source-sans-pro">Source Sans Pro</p>
+                    <p class="source-sans-pro light-300">light 300</p>
+                    <p class="source-sans-pro regular-400">regular 400</p>
+                </div>
+                
+                <div id="embed-fonts">
+                    <h4>Embed Fonts</h4>
+                    <hr>
+                    <p>Copy this code into the head of your HTML document to embed the fonts into a webpage.</p>
+                    <pre>
+                        <code class="prettyprint">
+&lt;link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Source+Sans+Pro:300,400" rel="stylesheet"&gt;
+                        </code>
+                    </pre>
+                        <p>Or use this code to directly embed fonts into your CSS document.</p>
+                    <pre>
+                        <code class="prettyprint">
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Source+Sans+Pro:300,400');
+                        </code>
+                    </pre>
+                        <p>Use the following CSS rules to specify the font families.</p>
+                    <pre>
+                        <code class="prettyprint">
+font-family: 'Josefin Sans', sans-serif;
+
+// font-weight: 400;
+// font-weight: 700;
+
+font-family: 'Source Sans Pro', sans-serif;
+
+// font-weight: 300;
+// font-weight: 400;
+                        </code>
+                    </pre>
+                </div>
+                <p>
+                    Do not use other fonts. The fallback must always be a sans-serif font.
+                </p>
+            </article>
+            <article id="logo">
+                <h3>Logo</h3>
+                <div id="packit-logo">
+                    <!-- <?xml version="1.0" encoding="utf-8"?> -->
+                    <!-- <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> -->
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="300px" height="200px" viewBox="0 0 98.469 104.348" enable-background="new 0 0 98.469 104.348"
+                        xml:space="preserve">
+                    <circle fill="#F0F0F0" cx="49.292" cy="55.151" r="49.125"/>
+                    <g>
+                        <path fill="#7D8CAA" stroke="#50648C" stroke-width="1.5" stroke-miterlimit="10" d="M24.951,63.692v2.443
+                            c0,2.936,2.381,5.318,5.318,5.318h38.046c2.938,0,5.318-2.383,5.318-5.318v-2.443H24.951z"/>
+                        <path fill="#A0AFBE" stroke="#50648C" stroke-width="1.5" stroke-miterlimit="10" d="M69.565,46.593v11.25v5.85h5.729
+                            c3.23,0,5.85-2.619,5.85-5.85v-11.25H69.565z"/>
+                        <polygon fill="#C3CDD2" stroke="#50648C" stroke-width="1.5" stroke-miterlimit="10" points="81.143,44.192 75.293,44.192
+                            69.565,44.192 69.565,48.093 81.143,48.093 	"/>
+                        <path fill="#A0AFBE" stroke="#50648C" stroke-width="1.5" stroke-miterlimit="10" d="M29.018,46.593v11.25v5.85H23.29
+                            c-3.23,0-5.85-2.619-5.85-5.85v-11.25H29.018z"/>
+                        <polygon fill="#C3CDD2" stroke="#50648C" stroke-width="1.5" stroke-miterlimit="10" points="17.44,44.192 23.29,44.192
+                            29.018,44.192 29.018,48.093 17.44,48.093 	"/>
+                        <path fill="#A0AFBE" stroke="#50648C" stroke-width="1.5" stroke-miterlimit="10" d="M73.633,15.438
+                            c0-2.938-2.381-5.319-5.318-5.319H30.269c-2.938,0-5.318,2.381-5.318,5.319v48.265h48.683V15.438z"/>
+                        <path fill="none" stroke="#50648C" stroke-width="2" stroke-miterlimit="10" d="M43.917,14.286v-8.5
+                            c0-2.589,2.406-4.688,5.375-4.688l0,0c2.969,0,5.375,2.099,5.375,4.688v8.5"/>
+                        <path fill="#50648C" d="M40.214,56.552c0,0.992-1.001,1.797-2.235,1.797l0,0c-1.233,0-2.234-0.805-2.234-1.797V12.645
+                            c0-0.993,1.001-1.797,2.234-1.797l0,0c1.234,0,2.235,0.804,2.235,1.797V56.552z"/>
+                        <path fill="#C3CDD2" stroke="#50648C" stroke-miterlimit="10" d="M42.229,42.057c0,1.174-0.951,2.125-2.125,2.125h-4.25
+                            c-1.174,0-2.124-0.951-2.124-2.125l0,0c0-1.174,0.95-2.125,2.124-2.125h4.25C41.278,39.932,42.229,40.883,42.229,42.057
+                            L42.229,42.057z"/>
+                        <path fill="#50648C" d="M62.838,56.552c0,0.992-1,1.797-2.234,1.797l0,0c-1.234,0-2.234-0.805-2.234-1.797V12.645
+                            c0-0.993,1-1.797,2.234-1.797l0,0c1.234,0,2.234,0.804,2.234,1.797V56.552z"/>
+                        <path fill="#C3CDD2" stroke="#50648C" stroke-miterlimit="10" d="M64.854,42.057c0,1.174-0.951,2.125-2.125,2.125h-4.25
+                            c-1.174,0-2.125-0.951-2.125-2.125l0,0c0-1.174,0.951-2.125,2.125-2.125h4.25C63.903,39.932,64.854,40.883,64.854,42.057
+                            L64.854,42.057z"/>
+                        <path fill="#C3CDD2" d="M73.625,10.119H49.292H24.958c0,0,0,1.379,0,3.458h48.667C73.625,11.498,73.625,10.119,73.625,10.119z"/>
+                        <path fill="#A0AFBE" d="M24.958,13.452c0,2.986,0.001,8.507,0,10.429c0,6.85,10.895,12.404,24.333,12.404
+                            c13.439,0,24.334-5.554,24.334-12.404c0-1.842,0-7.42,0-10.429H24.958z"/>
+                        <path fill="none" stroke="#50648C" stroke-width="1.5" stroke-miterlimit="10" d="M73.625,23.202
+                            c0,7.225-10.895,13.083-24.334,13.083c-13.438,0-24.333-5.858-24.333-13.083c0.001-2.833,0-13.083,0-13.083h24.333h24.334
+                            C73.625,10.119,73.625,20.493,73.625,23.202z"/>
+                        <path fill="#F2F2F2" stroke="#50648C" stroke-miterlimit="10" d="M54.292,57.474c0,0.967-0.783,1.75-1.75,1.75h-6.5
+                            c-0.966,0-1.75-0.783-1.75-1.75l0,0c0-0.967,0.784-1.75,1.75-1.75h6.5C53.508,55.724,54.292,56.507,54.292,57.474L54.292,57.474z"
+                            />
+                        <path fill="#F2F2F2" stroke="#50648C" stroke-miterlimit="10" d="M54.561,23.225c0.229,0.229,0.229,0.601,0,0.83l-4.854,4.854
+                            c-0.229,0.229-0.602,0.229-0.831,0l-4.854-4.854c-0.229-0.229-0.229-0.601,0-0.83l4.854-4.854c0.229-0.229,0.602-0.229,0.831,0
+                            L54.561,23.225z"/>
+                        <line fill="none" stroke="#50648C" stroke-miterlimit="10" x1="47.542" y1="22.14" x2="47.542" y2="25.14"/>
+                        <line fill="none" stroke="#50648C" stroke-miterlimit="10" x1="51.042" y1="22.14" x2="51.042" y2="25.14"/>
+                    </g>
+                    <g id="PackIt">
+                        <path fill="#323232" d="M19.743,79.168c1.184,1.064,1.776,2.517,1.776,4.356c0,1.056-0.204,2.044-0.612,2.964
+                            s-1.072,1.677-1.992,2.268c-0.92,0.593-2.108,0.889-3.564,0.889h-2.496v5.592h-3.48V77.572h5.352
+                            C16.887,77.572,18.559,78.104,19.743,79.168z M16.911,85.816c0.4-0.296,0.688-0.644,0.864-1.044
+                            c0.176-0.399,0.264-0.784,0.264-1.152c0-0.624-0.184-1.228-0.552-1.812c-0.368-0.584-1.08-0.876-2.136-0.876h-2.496v5.328h2.472
+                            C15.983,86.261,16.511,86.112,16.911,85.816z"/>
+                        <path fill="#323232" d="M31.575,91.78h-5.856l-1.44,3.456h-3.432l7.968-18.36h0.192l7.968,18.36h-4.032L31.575,91.78z
+                            M30.423,88.853l-1.704-4.296l-1.776,4.296H30.423z"/>
+                        <path fill="#323232" d="M49.456,94.876c-0.976,0.368-2.04,0.553-3.192,0.553c-1.84,0-3.44-0.4-4.8-1.2s-2.4-1.876-3.12-3.229
+                            c-0.72-1.352-1.08-2.835-1.08-4.452c0-1.775,0.36-3.359,1.08-4.752c0.72-1.392,1.728-2.476,3.024-3.252
+                            c1.296-0.775,2.792-1.164,4.488-1.164c1.072,0,2.064,0.145,2.976,0.433s1.712,0.647,2.4,1.08l-1.368,3.288
+                            c-1.264-0.96-2.56-1.44-3.888-1.44c-0.896,0-1.736,0.248-2.52,0.744c-0.784,0.496-1.408,1.172-1.872,2.028
+                            c-0.464,0.855-0.696,1.804-0.696,2.844c0,1.136,0.216,2.132,0.648,2.988c0.432,0.855,1.047,1.523,1.848,2.004
+                            c0.8,0.479,1.736,0.72,2.808,0.72c0.864,0,1.64-0.14,2.328-0.42c0.688-0.28,1.232-0.612,1.632-0.996l1.44,3.12
+                            C51.144,94.141,50.431,94.509,49.456,94.876z"/>
+                        <path fill="#323232" d="M58.503,84.748l0.528-0.672l5.76-6.504h4.512l-7.296,7.92l7.32,9.744h-4.416L59.463,87.7l-0.864,0.864
+                            v6.672h-3.528V77.572h3.528v6.288L58.503,84.748z"/>
+                        <path fill="#7D8CAA" d="M75.447,77.572v17.664h-3.48V77.572H75.447z"/>
+                        <path fill="#7D8CAA" d="M90.71,77.572v3.36h-4.296v14.304h-3.48V80.933h-4.128v-3.36H90.71z"/>
+                    </g>
+                    </svg>
+                </div>
+                <div class="short_description">
+                    <p>
+                        The word and design mark should only be used with white background. The height must never undershoot 200px. A minimum distance of 10% of the height of the logo to other elements must be respected in any case.
+                        The colors and fonts must not be changed. The logo must not be distorted in any way, single elements should not be moved and the proportions must not be changed. 
+                    </p>
+                </div>
+                <div id="embed-logo">
+                    <p>Use SVG to directly embed the logo into your HTML document:
+                     <a href="<%=require('./images/packitlogo.svg')%>">download</a>.
+                    </p>
+                </div>
+                <div class="display-logo">
+                    <h4>Figurative Mark</h4>
+                    <div id="packit-logo-figurativemark">
+                        <!-- <?xml version="1.0" encoding="utf-8"?> -->
+                        <!-- <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> -->
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            width="200px" height="200px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                        <circle fill="#F0F0F0" cx="49.125" cy="49.126" r="49.125"/>
+                        <g>
+                            <path fill="#7D8CAA" stroke="#50648C" stroke-width="1.5" stroke-miterlimit="10" d="M24.784,72.542v2.443
+                                c0,2.936,2.381,5.318,5.318,5.318h38.046c2.938,0,5.318-2.383,5.318-5.318v-2.443H24.784z"/>
+                            <path fill="#A0AFBE" stroke="#50648C" stroke-width="1.5" stroke-miterlimit="10" d="M69.398,55.442v11.25v5.85h5.729
+                                c3.23,0,5.85-2.619,5.85-5.85v-11.25H69.398z"/>
+                            <polygon fill="#C3CDD2" stroke="#50648C" stroke-width="1.5" stroke-miterlimit="10" points="80.977,53.041 75.127,53.041
+                                69.398,53.041 69.398,56.942 80.977,56.942 	"/>
+                            <path fill="#A0AFBE" stroke="#50648C" stroke-width="1.5" stroke-miterlimit="10" d="M28.852,55.442v11.25v5.85h-5.729
+                                c-3.23,0-5.85-2.619-5.85-5.85v-11.25H28.852z"/>
+                            <polygon fill="#C3CDD2" stroke="#50648C" stroke-width="1.5" stroke-miterlimit="10" points="17.273,53.041 23.123,53.041
+                                28.852,53.041 28.852,56.942 17.273,56.942 	"/>
+                            <path fill="#A0AFBE" stroke="#50648C" stroke-width="1.5" stroke-miterlimit="10" d="M73.467,24.287
+                                c0-2.938-2.381-5.319-5.318-5.319H30.103c-2.938,0-5.318,2.381-5.318,5.319v48.265h48.683V24.287z"/>
+                            <path fill="none" stroke="#50648C" stroke-width="2" stroke-miterlimit="10" d="M43.75,23.135v-8.5
+                                c0-2.589,2.406-4.688,5.375-4.688l0,0c2.969,0,5.375,2.099,5.375,4.688v8.5"/>
+                            <path fill="#50648C" d="M40.048,65.401c0,0.992-1.001,1.797-2.235,1.797l0,0c-1.233,0-2.234-0.805-2.234-1.797V21.494
+                                c0-0.992,1.001-1.797,2.234-1.797l0,0c1.234,0,2.235,0.805,2.235,1.797V65.401z"/>
+                            <path fill="#C3CDD2" stroke="#50648C" stroke-miterlimit="10" d="M42.062,50.906c0,1.174-0.951,2.125-2.125,2.125h-4.25
+                                c-1.174,0-2.124-0.951-2.124-2.125l0,0c0-1.174,0.95-2.125,2.124-2.125h4.25C41.111,48.781,42.062,49.732,42.062,50.906
+                                L42.062,50.906z"/>
+                            <path fill="#50648C" d="M62.672,65.401c0,0.992-1,1.797-2.234,1.797l0,0c-1.234,0-2.234-0.805-2.234-1.797V21.494
+                                c0-0.992,1-1.797,2.234-1.797l0,0c1.234,0,2.234,0.805,2.234,1.797V65.401z"/>
+                            <path fill="#C3CDD2" stroke="#50648C" stroke-miterlimit="10" d="M64.688,50.906c0,1.174-0.951,2.125-2.125,2.125h-4.25
+                                c-1.174,0-2.125-0.951-2.125-2.125l0,0c0-1.174,0.951-2.125,2.125-2.125h4.25C63.736,48.781,64.688,49.732,64.688,50.906
+                                L64.688,50.906z"/>
+                            <path fill="#C3CDD2" d="M73.459,18.968H49.125H24.792c0,0,0,1.38,0,3.459h48.667C73.459,20.348,73.459,18.968,73.459,18.968z"/>
+                            <path fill="#A0AFBE" d="M24.792,22.302c0,2.986,0.001,8.507,0,10.429c0,6.851,10.895,12.404,24.333,12.404
+                                c13.439,0,24.334-5.554,24.334-12.404c0-1.842,0-7.42,0-10.429H24.792z"/>
+                            <path fill="none" stroke="#50648C" stroke-width="1.5" stroke-miterlimit="10" d="M73.459,32.052
+                                c0,7.225-10.895,13.083-24.334,13.083c-13.438,0-24.333-5.858-24.333-13.083c0.001-2.834,0-13.084,0-13.084h24.333h24.334
+                                C73.459,18.968,73.459,29.342,73.459,32.052z"/>
+                            <path fill="#F2F2F2" stroke="#50648C" stroke-miterlimit="10" d="M54.125,66.323c0,0.967-0.783,1.75-1.75,1.75h-6.5
+                                c-0.966,0-1.75-0.783-1.75-1.75l0,0c0-0.967,0.784-1.75,1.75-1.75h6.5C53.342,64.573,54.125,65.356,54.125,66.323L54.125,66.323z"
+                                />
+                            <path fill="#F2F2F2" stroke="#50648C" stroke-miterlimit="10" d="M54.395,32.074c0.229,0.229,0.229,0.602,0,0.83l-4.854,4.854
+                                c-0.229,0.229-0.602,0.229-0.831,0l-4.854-4.854c-0.229-0.229-0.229-0.601,0-0.83l4.854-4.854c0.229-0.229,0.602-0.229,0.831,0
+                                L54.395,32.074z"/>
+                            <line fill="none" stroke="#50648C" stroke-miterlimit="10" x1="47.376" y1="30.989" x2="47.376" y2="33.989"/>
+                            <line fill="none" stroke="#50648C" stroke-miterlimit="10" x1="50.876" y1="30.989" x2="50.876" y2="33.989"/>
+                        </g>
+                        </svg>
+                    </div>
+                    <p>The figurative mark should only be used in appropriate contexts.
+                        The brand name must be communicated clearly at this point.
+                        The figurative mark should only be used with white background.
+                        The height must never undershoot 200px.
+                        A minimum distance of 10% of the height of the logo to other elements must be respected in any case.
+                        The colors must not be changed.
+                        The logo must not be distorted in any way, single elements may not be moved and proportions must not be changed.</p>
+                     <p class="download">   
+                        Use SVG to directly embed the figurative mark into the your HTML document:
+                        <a href="<%=require('./images/packitlogo-figurativemark.svg')%>">download</a>.
+                    </p>
+                </div>
+                <div class="display-logo">
+                    <h4>Word Mark</h4>
+                    <p class="showlogo" id="first_showlogo">Pack<span>it</span></p>
+                    <p class="showlogo" id="second_showlogo">Pack<span>it</span></p>
+                    <p class="showlogo" id="third_showlogo">Pack<span>it</span></p>
+                    <p>The word mark is included as text (font family: Josefin Sans bold 700).
+                        On the one hand, the word mark can be used freestanding and on the other hand in continuous text.
+                        The word mark can be displayed on different backgrounds as well as on pictures as shown above.
+                        It is important to ensure an appropriate contrast between background and logo. Depending on the background, the the word "PACK" is colored drakgrey or white.
+                        The word "IT" is always colored in logoblue.</p>
+                </div>
+
+            </article>
+        </section>
+
+        <section id="CSS-Methodology">
+            <h2>CSS-Methodology</h2>
+            <article id="class-naming-conventions">
+                <h3>Class naming conventions</h3>
+                <div class="first-convention">
+                    <h4>Use Hyphen Delimited Strings</h4>
+                    <p>Do not do this: </p>
+                    <pre>
+                        <code class="prettyprint">
+.headingsCode {
+    border: 1px solid red;
+}
+                        </code>
+                    </pre>
+                    <p>Instead, do this: </p>
+                    <pre>
+                        <code class="prettyprint">
+.headings-code {
+    width: 50vw;
+}
+                        </code>
+                    </pre>
+                    <p>It is consistent with the CSS property names.</p> 
+                    <pre>
+                        <code class="prettyprint">
+.headings-code {
+    font-size: 0.8em;
+    line-height: 1.8em;
+}
+                        </code>
+                    </pre> 
+                </div>
+                <div class="second-convention">
+                    <h4>BEM Naming Convention</h4>
+                    <p>B stands for block: The outermost parent element of the component is defined as the block.
+                        Class name selector is used preferred.
+                        Superfluous naming is to be avoided.</p>
+                    <pre>
+                        <code class="prettyprint">
+.stick-man { 
+}
+                        </code>
+                    </pre>
+                    <p>E stands for elements: Inside of the component may be one or more children called elements. Elements are semantically tied to their block.</p>
+                    <pre>
+                        <code class="prettyprint">
+.stick-man__head {  
+}
+
+.stick-man__arms {
+}
+
+.stick-man__feet {
+}
+                        </code>
+                    </pre>
+                    <p>M stands for modifiers: Either a block or element may have a variation signified by a modifier. Modifiers are used to change appearance, behavior or state.</p>
+                    <pre>
+                        <code class="prettyprint">
+.stick-man--blue {
+}
+
+.stick-man--red {
+}
+                        </code>
+                    </pre>
+                </div>
+            </article>
+            <article id="units">
+                <h3>Units</h3>
+                <ul>
+                    <li><span class="bold">Font sizes</span> are declared using pixels or em.</li>
+                    <li><span class="bold">Height</span> is set with view height or pixels.</li>
+                    <li><span class="bold">Width</span> is set with view width, pixels or percent.</li>
+                    <li><span class="bold">Margin and padding</span> are set with pixels.</li>
+                </ul>
+                <h3>File structure</h3>
+                <p>The file structure should follow this example.
+                    Sass files should be devided into partials.</p>
+                <img src="<%=require('./images/files.png')%>" alt="File structure">
+            </article>
+            <article>
+                <h3>Preprocessors</h3>
+                <ul>
+                    <li>CSS Preprocessor "Sass"</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="UI-Pattern-Library">
+            <h2>UI Pattern Library</h2>
+            <article class="headings">
+                <h3>Headings</h3>
+                <p>When building a web page, having a clear page structure is important to organize the content of the page.
+                    This is best accomplished through the use of headings.
+                    Navigating through the &lt;h1&gt; and &lt;h2&gt; gives users an overview of a page and how its content
+                    is structured. Heading tags should be in order. That means an &lt;h1&gt; is followed by an &lt;h2&gt;,
+                    an &lt;h2&gt; is followed by a &lt;h2&gt; or &lt;h3&gt; and so on. PackIt uses four different headings.
+                </p>
+                <div class="flex_headings">
+                    <h1>Heading Level One</h1>
+                    <h2>Heading Level Two</h2>
+                    <h3>Heading Level Three</h3>
+                    <h4>Heading Level Four</h4>
+                </div>
+                <div id="headings-code-snippet">
+                    <pre>
+                        <code class="prettyprint">
+h1, h2, h3, h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    color:$darkgrey;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 400; 
+}
+
+h3 {
+    font-size: 1.25em;
+    font-weight: 400; 
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: 400; 
+}
+                        </code>
+                    </pre>
+                </div>
+            </article>
+            <article id="lists">
+                <h3>Lists</h3>
+                <p>
+                    PackIt uses &lt;ul&gt; markup to group unordered lists: To-Pack, To-Buy and To-Do.
+                </p>
+                <div id="flex_lists">
+                    <h2 style="display:none">For HTML Validation</h2>
+                    <ul>
+                        <li>Shoes</li>
+                        <li>Casual Pants</li>
+                        <li>Socks</li>
+                        <li>Underwear</li>
+                        <li>Sweater</li>
+                    </ul>
+                </div>
+                <pre>
+                    <code class="prettyprint">
+ul {
+    list-style: circle;
+    line-height: 1.5em;
+}
+                    </code>
+                </pre>
+            </article>
+
+            <article id="links">
+
+            <h3>Links</h3>
+
+                <p>
+                    Links are used to lead users to new locations within the website.
+                </p>
+
+                <div id="flex_links">
+                    <h2 style="display:none">For HTML Validation</h2>
+                    <ul>
+                        <li><a href="#links">Edit trip</a></li>
+                        <li><a href="#links">Copy trip</a></li>
+                        <li><a href="#links">Delete trip</a></li>
+                     </ul>
+                </div>
+                <pre>
+                    <code class="prettyprint">
+a {
+    text-decoration: underline;
+    color: $darkgrey;
+}
+                    </code>
+                </pre>
+            </article>
+            <article id="buttons">
+                <h3>Buttons</h3>
+                <p>
+                    Buttons are clickable items used to perform an action. It should be used in situations where users might need to:
+                </p>
+                <div id="buttons_ul">
+                    <ul>
+                        <li>submit a form</li>
+                        <li>begin a new task</li>
+                        <li>specify a new or next step in a process</li>
+                    </ul>
+                </div>
+                <div class="flex_buttons">
+                    <button id="getstarted_button">Get Started</button>
+                    <div>
+                        <button class="list_button">To Pack</button>
+                        <button class="list_button">To Buy</button>
+                        <button class="list_button">To Do</button>
+                    </div>
+                    <button id="business_button">Business</button>
+                    <div>
+                        <button id="save_button">Save</button>
+                        <button id="cancel_button">Cancel</button>
+                    </div>
+                </div>
+
+                <pre>
+                    <code class="prettyprint">
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    background-color: $lightgrey;
+    border: none;
+    border-radius: 0.75em;
+    padding: 10px 20px;
+    font-size: 0.75em;
+}
+
+button:hover {
+    background-color: $logoblue;
+    color: white;
+}
+
+.list_button { //To Pack, To Buy, To Do
+    width: 300px;
+}
+
+#business_button {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    flex-grow: 0;
+}
+
+#save_button:hover {
+    background-color: rgb(160, 200, 165);
+}
+
+#cancel_button:hover {
+    background-color: rgb(185, 75, 80);
+}
+                    </code>
+                </pre>
+            </article>
+            <article id="form-elements">
+                <h3>Form elements</h3>
+                <p>
+                    Users of PackIt have the opportunity to create a profile to set their own individual packing list components.
+                </p>
+                    <form action="#">
+                        <div class="form_container">
+                            <h3>Register</h3>
+                            <p>Please fill in this form to create an account.</p>
+                            <hr>
+                            
+                            <div class="flex_label">
+                                <label for="form_email"><b>Email</b></label>
+                                <input type="text" placeholder="Enter Email" name="email" id="form_email" required>
+                                    
+                                <label for="form_psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" id="form_psw" required>
+                                
+                                <label for="form_psw-repeat"><b>Repeat Password</b></label>
+                                <input type="password" placeholder="Repeat Password" name="psw-repeat" id="form_psw-repeat" required>      
+                            </div>
+                        <hr>
+                        <p>By creating an account you agree to our <a href="#">Terms and Privacy</a>.</p>
+                        
+                        <button type="submit" class="register">Register</button>
+                    </div>
+                            
+                    <div class="form_container signin">
+                        <p>Already have an account? <a href="#">Sign in</a>.</p>
+                    </div>
+                </form>
+                <pre>
+                    <code class="prettyprint">
+.form_container {
+    padding: 20px;
+    margin: 20px;
+    background-color: $logoblue;
+}
+
+h3, b, p, a {
+     color: white;
+}
+
+p {
+    margin-left: 0;
+}
+
+hr {
+    border-top: 1px solid white;
+    margin-top: 20px;
+}
+
+label {
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+                    </code>
+                </pre>
+            </article>
+            <article id="media-blocks">
+                <h3>Media blocks</h3>
+                <p>
+                    All trips are displayed with an image of the corresponding destination.
+                </p>
+
+                <div class="media-block">
+                    <h2>Business trip to London</h2>
+                    <p>February 5 - 12, 2019</p>
+                </div>
+                <pre>
+                    <code class="prettyprint">
+.media-block {
+    background: url(../images/london.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+}
+                    </code>
+                </pre>
+            </article>
+            <article id="navigation">
+                <h3>Navigation</h3>
+                <p>
+                    Navigation on a website is achieved by a collection of links. 
+                    Users navigate via a dropdown menu (both mobile and web).
+                </p>
+                <pre>
+                    <code class="prettyprint">
+&lt;nav&gt;
+    &lt;a href="#"&gt;Pack&lt;span&gt;it&lt;/span&gt;&lt;/a&gt;
+    &lt;div&gt;
+        &lt;a href="#"&gt;nav-item&lt;/a&gt;
+        &lt;a href="#"&gt;nav-item&lt;/a&gt;
+        &lt;a href="#"&gt;nav-item&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+&lt;div&gt;
+    &lt;button class="burgerbutton" id="off"&gt;&lt;/button&gt;
+    &lt;button class="burgerbutton" id="on"&gt;&lt;/button&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+                <h4>Possible animations</h4>
+                <p>Annimations can be used. The following annimation sets an example.</p>
+                <div id="animations">
+                    <div id="animation1">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Styleguide created by Tra Nguyen and Eva-Maria Strumegger ©</p>
+    </footer>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>

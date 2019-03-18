@@ -1,0 +1,271 @@
+// ========================== Gerneral settings ========================== //
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: $max-width;
+    margin: auto;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    color:$darkgrey;
+    font-weight: 400; 
+  }
+  
+  h1 {
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 110%;
+  }
+
+  h3, h4 {
+    margin-top: $margin;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    padding: 0.5em 0;
+  }
+  
+  h3 {
+    font-size: 1.25em;
+    padding: 0.5em 0;
+  }
+
+  h4 {
+    font-size: 1em;
+    padding: 0.5em 0;
+  }
+  
+  p {
+    line-height: 1.4em;
+    color:$darkgrey;
+    max-width: 640px;
+    margin: $margin;
+  }
+
+  .bold { 
+    font-weight: 400;
+  }
+
+  .short_description {
+    width: 100%;
+    max-width: none;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid $darkgrey;
+    margin-bottom: 20px;
+  }
+
+  pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+  
+  section {
+    background-color: $lightgrey;
+    width: 100%;
+    margin: 20px 0;
+    padding: 30px $padding;
+  }
+  
+  ul {
+    list-style: circle;
+    line-height: 1.5em;
+    margin: 5px $margin;
+    padding: 5px $padding;
+  }
+  
+  // =============================== Header ================================ //
+  
+  header {
+    width: 100vw;
+    background-color: $lightgrey;
+    position: fixed;
+    box-shadow: 0px 0.5px 15px $darkgrey;
+  }
+  
+  // ====== Navigation ====== //
+  
+  nav {
+    width: 100%;
+    margin: auto;
+    max-width: $max-width;
+    padding: 0 $padding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    height: $header-height;
+  
+    a {
+      text-decoration: none;
+      font-family: 'Josefin Sans', sans-serif;
+      text-transform: uppercase;
+      color: $darkgrey;
+      font-size: 0.8em;
+      font-weight: 400;
+    }
+  
+    > a {
+      font-family: 'Josefin Sans', sans-serif;
+      text-transform: uppercase;
+      color: $darkgrey;
+      font-size: 1.3em;
+      font-weight: 700;
+  
+      span {
+        color: $logoblue;
+      }
+    }
+  
+    #nav-items  {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+  
+      a {
+        padding: 0 0 0 2vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      a:hover {
+        color: $outlineblue;
+      }
+    }
+  }
+
+  .burgerbuttons {
+    display: none;
+  }
+
+
+  @media (max-width: 850px) {
+
+    .burgerbuttons {
+      display: block;
+    }
+    
+    header {
+      display: flex;
+      padding-right: $padding;
+    }
+
+    nav {
+      margin-top: $margin;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      #nav-items {
+        display: none;
+        margin-top: $margin;
+        flex-direction: column;
+        line-height: 1.5em;
+        a {
+          padding: 0;
+          height: auto;
+        }
+      }
+    }
+    
+    @media (max-width: 290px) {
+      nav #nav-items a {
+        font-size: 0.5em;
+        line-break: none;
+      }
+    }
+
+    .burgerbuttons {
+      margin-top: 5px;
+    }
+    
+    .burgerbutton {
+      display: block;
+      background-color: rgba(0,0,0,0);
+      border: none;
+      color: $darkgrey;
+      font-size: 1em;
+      margin: 0;
+      padding: 0;
+    }
+    .burgerbutton:focus {
+      outline: none;
+      }
+
+      #on {
+        display: none;
+        z-index: 1;
+        font-size: 2.3em;
+      }
+
+      #off {
+        z-index: 2;
+        font-size: 1.5em;
+        margin-top: 10px;
+      }
+    }
+  
+  // =============================== Main ================================ //
+  
+  main {
+    margin-top: $header-height;
+    width: 100%;
+  }
+
+  @media (max-width: 850px) {
+    main {
+      margin-top: 70px;
+    }
+  }
+
+  #styleguide {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+  
+    h1 {
+      color: $darkgrey;
+      span {
+        color: $logoblue;
+      }
+    }
+  }
+  
+  // =============================== Footer ================================ //
+  
+  footer {
+    width: 100vw;
+    background-color: $lightgrey;
+    font-size: 0.8em;
+    padding: $padding;
+  }
+
+  footer p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+  }

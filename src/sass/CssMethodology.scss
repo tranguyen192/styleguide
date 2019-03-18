@@ -1,0 +1,36 @@
+// ====== Class naming conventions ====== //
+
+#CSS-Methodology ol li {
+    font-size: 1.2em;
+    font-style: oblique;
+}
+
+#class-naming-conventions {
+    h3 {
+        width: 100%;
+    }
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.first-convention, .second-convention {
+    flex-grow: 1;
+    background-color: white;
+    margin: $margin;
+    padding: $padding;
+    max-width: 100%;
+}
+
+.first-convention pre, .second-convention pre {
+    background-color: $lightgrey;
+    padding: $padding;
+}
+
+// ====== Units ====== //
+
+#units img {
+    width: 100%;
+    max-width: 400px;
+}

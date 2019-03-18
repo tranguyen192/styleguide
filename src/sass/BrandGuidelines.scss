@@ -1,0 +1,255 @@
+  // ========================== Colors ========================== //
+  
+  #colors {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    h3 {
+      width: 100%;
+    }
+  }
+  
+  .color_wrapper {
+    min-width: 150px;
+    margin: $margin;
+    padding-bottom: $padding;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    h4 {
+      margin-top: 5px;
+      padding-bottom: 10px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .color_wrapper {
+      max-width: 200px;
+      min-width: 200px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .color_wrapper {
+      min-width: 150px;
+    }
+  }
+  
+  .color {
+    width: 100px; 
+    height: 100px;
+    margin: $margin;
+  }
+
+  #darkgrey {
+    background-color: $darkgrey;
+  }
+  #outlineblue {
+    background-color: $outlineblue;
+  }
+  #logoblue {
+    background-color: $logoblue;
+  }
+  #backpackblue {
+    background-color: $backpackblue;
+  }
+  #lightblue {
+    background-color: $lightblue;
+  }
+  #lightgrey {
+    background-color: $lightgrey;
+  }
+  
+  // ========================== Typography ========================== //
+
+  #typography {
+    display: flex;
+    flex-wrap: wrap;
+
+    h3 {
+      width: 100%;
+    }
+
+    pre {
+      background-color: $lightgrey;
+      padding: 0.5em;
+    }
+    pre:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .josefin-sans {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .source-sans-pro {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .regular-400 {
+    font-weight: 400;
+  }
+
+  .bold-700 {
+    font-weight: 700;
+  }
+
+  .light-300 {
+    font-weight: 300;
+  }
+
+  #headlines, #continuous-text, #embed-fonts {
+    background-color: white;
+    margin: $margin;
+    padding: $padding;
+    flex-grow: 1;
+  }
+
+  #headlines, #continuous-text {
+    max-width: 50%;
+  }
+
+  @media (max-width: 800px) {
+    #headlines, #continuous-text {
+      max-width: 100%;
+      min-width: 400px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    #headlines, #continuous-text, #embed-fonts  {
+      min-width: 150px;
+      margin: 0;
+    }
+  }
+
+  #embed-fonts {
+    max-width: 100%;
+  }
+  
+  // ========================== Logo ========================== //
+
+  #logo {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    h3 {
+      width: 100%;
+    }
+
+    pre {
+      background-color: $lightgrey;
+      padding: 0.5em;
+    }
+    pre:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  #packit-logo {
+    margin: $margin;
+    padding: $padding;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #packit-logo-figurativemark {
+    margin: $margin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #embed-logo {
+    background-color: white;
+    flex-grow: 1;
+    width: 100%;
+    margin: $margin;
+    padding: $padding;
+
+    pre {
+      background-color: $lightgrey;
+      padding: 0.5em;
+    }
+  }
+
+ 
+  .display-logo {
+    background-color: white;
+    margin: $margin;
+    padding: $padding;
+    max-width: 100%;
+    width: 40%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h4 {
+      width: 100%;
+    }
+
+    .showlogo {
+      font-family: 'Josefin Sans', sans-serif;
+      text-transform: uppercase;
+      color:$darkgrey;
+      font-weight: 700;
+      margin: $margin;
+      padding: $padding;
+      background: $lightgrey;
+      font-size: 2em;
+      width: 100%;
+
+      span {
+        color: $logoblue;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+      .display-logo  {
+        width: calc(100%-40px) !important;
+      }
+
+      #packit-logo-figurativemark {
+        width: calc(100%-40px) !important;
+      }
+      #packit-logo {
+        width: calc(100%-40px) !important;
+      }
+    }
+
+  .download {
+    background-color: $lightgrey;
+    margin: $margin;
+    padding: $padding;
+  }
+
+  #second_showlogo {
+    background-color: $darkgrey;
+    color: white;
+  }
+
+  #third_showlogo {
+    background: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }

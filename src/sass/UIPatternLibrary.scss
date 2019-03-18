@@ -1,0 +1,378 @@
+// ============ HEADINGS ============ //
+
+.headings {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    h3 {
+        width: 100%;
+    }
+    p {
+        width: 100%;
+    }
+}
+
+.flex_headings {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: url(../images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: $margin;
+    padding: $padding;
+    flex-grow: 1;
+    width: 50%;
+}
+
+.flex_headings h1, .flex_headings h2, .flex_headings h3, .flex_headings h4{
+    margin: $margin;
+    padding: 0;
+}
+
+#headings-code-snippet {
+    margin: $margin;
+    padding: $padding;
+    background-color: white;
+    flex-grow: 1;
+    width: 30%;
+    min-width: 200px;
+}
+
+// ============ LISTS & LINKS ============ //
+
+#lists, #links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    h3 {
+        width: 100%;
+    }
+    p {
+        min-width: calc(100% - 40px);
+    }
+
+    a {
+        text-decoration: underline;
+        color: $darkgrey;
+    }
+}
+
+#flex_lists, #lists pre, #flex_links, #links pre {
+    flex-grow: 1;
+    margin: $margin;
+    padding: $padding;
+    background-color: white;
+}
+
+#flex_lists, #flex_links {
+    padding-left: 40px;
+}
+
+// ============ BUTTONS ============ //
+
+.flex_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: $margin;
+    padding: $padding;
+} 
+
+@media (max-width: 800px) {
+    .flex_buttons {
+        flex-direction: column;
+    }
+  }
+
+.flex_buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: $margin;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    background-color: $lightgrey;
+    border: none;
+    border-radius: 0.75em;
+    padding: 10px 20px;
+    font-size: 0.75em;
+}
+
+.flex_buttons button:hover {
+    background-color: $logoblue;
+    color: white;
+}
+
+.flex_buttons div, .flex_buttons div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    margin: $margin;
+}
+
+#business_button {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    flex-grow: 0;
+}
+
+.list_button {
+    width: 300px;
+}
+
+#save_button:hover {
+    background-color: $green;
+}
+
+#cancel_button:hover {
+    background-color: $red;
+}
+
+@media (max-width: 440px) {
+    .flex_buttons div:first-of-type {
+        max-width: 100%;
+        display: flex;
+    }
+    .list_button {
+        flex-grow: 1;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .flex_buttons button {
+        margin: 10px 0;
+    }
+  }
+
+  #buttons {
+      display: flex;
+      flex-direction: column;
+  }
+
+  #buttons pre {
+      background-color: white;
+      margin: $margin;
+      padding: $padding;
+      flex-grow: 1;
+  }
+
+// ============ FORM ELEMENTS ============ //
+
+#form-elements {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    h3 {
+        width: 100%;
+    }
+    p {
+        min-width: calc(100% - 40px);
+    }
+    form {
+        flex-grow: 1;
+    }
+
+    pre {
+        flex-grow: 1;
+        background-color: white;
+        margin: $margin;
+        padding: $padding;
+    }
+}
+
+.form_container {
+    padding: $padding;
+    margin: $margin;
+    background-color: $logoblue;
+
+    h3, b, p, a {
+        color: white;
+    }
+
+    p {
+        margin-left: 0;
+    }
+}
+
+.form_container hr {
+    border-top: 1px solid white;
+    margin-top: 20px;
+}
+
+.flex_label {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_label label {
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+.form_container button {
+    margin-top: 1em;
+}
+
+.register {
+    padding: 10px 20px;
+    background-color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.75em;
+}
+
+.register:hover {
+    background-color: $outlineblue;
+    color: white;
+}
+
+#flex_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#flex_form pre {
+    background-color: white;
+    padding: 3em;
+}
+
+// ============ MEDIA BLOCKS ============ //
+
+#media-blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    h3 {
+        width: 100%;
+    }
+
+    p {
+        min-width: calc(100% - 40px);
+    }
+}
+
+.media-block {
+    background: url(../images/london.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    height: 200px;
+    flex-grow: 1;
+    width: 100%;
+    padding: $padding;
+    margin: $margin;
+}
+.media-block p {
+    margin: 0;
+}
+
+#media-blocks pre {
+    width: 100%;
+    background-color: white;
+    padding: $padding;
+    margin: $margin;
+}
+
+// ============ NAVIGATION ============ //
+
+#navigation {
+    pre {
+        background-color: white;
+        margin: $margin;
+        padding: $padding;
+    }
+}
+
+.show-nav {
+    .burgerbuttons {
+        display: block;
+      }
+      
+      header {
+        display: flex;
+        padding-right: $padding;
+      }
+  
+      nav {
+        margin-top: $margin;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+  
+        #show_nav-items {
+          display: none;
+          margin-top: $margin;
+          flex-direction: column;
+          line-height: 1.5em;
+          a {
+            padding: 0;
+            height: auto;
+          }
+        }
+      }
+}
+
+// ====== animation ====== //
+
+#animations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 80px $padding 60px $padding;
+    margin: $margin;
+}
+#animation1 {
+  position: absolute;
+  width: 56px;
+  margin-top: 9vh;
+  transform: translate(-50%, -50%);
+  font-size: 62px;
+  font-family:'Josefin Sans', sans-serif;
+  color: $outlineblue;
+  cursor: pointer;
+}
+#animation1::before,
+#animation1::after {
+  position: absolute;
+  transition: 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+#animation1:before {
+  content: "M \00a0 \00a0 \00a0 \00a0 \00a0";
+  top: -60px;
+  left: -100%;
+  width: 215px;
+}
+#animation1:after {
+  content: "NU";
+  top: 50px;
+  left: 96%;
+}
+#animation1:hover::before,
+#animation1:hover::after {
+  top: -4.3px;
+  opacity: 1;
+  transition: 0.2s ease, opacity 0.17s 0.03s ease-in;
+}
+.bar {
+  width: 80%;
+  height: 6px;
+  background: $logoblue;
+  margin: 0 auto 14px;
+  transition: transform 0.4s ease;
+}
